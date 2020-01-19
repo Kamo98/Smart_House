@@ -2,7 +2,7 @@
 
 
 
-AirÑonditioning::AirÑonditioning(int intensity)
+AirÑonditioning::AirÑonditioning(string deviceId, int intensity) : RealDevice(deviceId)
 {
 	this->intensity = intensity;
 }

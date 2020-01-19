@@ -6,7 +6,7 @@ class Air—onditioning :
 private:
 	int intensity;
 public:
-	Air—onditioning(int intensity);
+	Air—onditioning(string deviceId, int intensity);
 	~Air—onditioning();
 };
 

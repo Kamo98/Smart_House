@@ -2,8 +2,9 @@
 #include "Command.h"
 
 
-RealDevice::RealDevice()
+RealDevice::RealDevice(string deviceId)
 {
+	this->deviceId = deviceId;
 	state = StateDevice::SWITCHED_OFF;
 }
 

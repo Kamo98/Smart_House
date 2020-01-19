@@ -13,11 +13,12 @@ using namespace std;
 class RealDevice : public IDevice
 {
 protected:
+	string deviceId;
 	StateDevice state;						//Состояние прибора
 	map<string, int> permissibleComands;	//Список допустимых функций прибора <имя ф-ии, делегат>
 
 public:
-	RealDevice();
+	RealDevice(string deviceId);
 	~RealDevice();
 
 	// Унаследовано через Appliance

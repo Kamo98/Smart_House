@@ -9,13 +9,14 @@
 #include "Rule.h"
 #include "AirÑonditioning.h"
 #include "RuleLogger.h"
+#include "SmartLampAdapter.h"
 
 
 
 //Òåñòèðîâàíèå ïðîêñè
 void test_proxy() {
 	ProxyDevice *prox1 = new ProxyDevice(), *prox2 = new ProxyDevice();
-	RealDevice *app1 = new RealDevice(), *app2 = new RealDevice(), *app3 = new RealDevice();
+	RealDevice *app1 = new RealDevice("Ïðèáîð 1"), *app2 = new RealDevice("Ïðèáîð 2"), *app3 = new RealDevice("Ïðèáîð 3");
 	prox1->init_device(app1);
 
 	const int N = 3;
@@ -55,7 +56,7 @@ void test_delegate() {
 	printf("Òåìïåðàòóðà íà äàò÷èêå = %d C\n", term1->get_value());
 	printf("Âëàæíîñòü âîçäóõà íà äàò÷èêå = %d %\n", humid1->get_value());
 
-	AirÑonditioning *cond = new AirÑonditioning(20);
+	AirÑonditioning *cond = new AirÑonditioning("Êîíäèöèîíåð", 20);
 	
 	Command *comm = new Command(cond, "Ñäåëàé õîëîäíåå");
 
@@ -73,6 +74,7 @@ void test_delegate() {
 	printf("Òåìïåðàòóðà íà äàò÷èêå = %d C\n", term1->get_value());
 
 }
+
 
 
 int main()

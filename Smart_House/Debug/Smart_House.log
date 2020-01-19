@@ -1,4 +1,3 @@
-﻿  Smart_House.cpp
-h:\университет\7 сем\паттерны\smart_house\smart_house\smart_house.cpp(56): warning C4778: "printf": незавершенная строка форматирования "%\n"
+﻿  SmartLampAdapter.cpp
   Smart_House.vcxproj -> H:\Университет\7 сем\Паттерны\Smart_House\Debug\Smart_House.exe
   Smart_House.vcxproj -> H:\Университет\7 сем\Паттерны\Smart_House\Debug\Smart_House.pdb (Partial PDB)
