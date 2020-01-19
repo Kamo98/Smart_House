@@ -142,12 +142,37 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AirСonditioning.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="Device.h" />
+    <ClInclude Include="HumidityMeter.h" />
+    <ClInclude Include="Indicator.h" />
+    <ClInclude Include="IRuleListener.h" />
+    <ClInclude Include="ProxyDevice.h" />
+    <ClInclude Include="RealDevice.h" />
+    <ClInclude Include="Rule.h" />
+    <ClInclude Include="RuleLogger.h" />
+    <ClInclude Include="Sensor.h" />
+    <ClInclude Include="StateDevice.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Thermometer.h" />
+    <ClInclude Include="TypeOfSensor.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AirСonditioning.cpp" />
+    <ClCompile Include="Command.cpp" />
+    <ClCompile Include="Device.cpp" />
+    <ClCompile Include="HumidityMeter.cpp" />
+    <ClCompile Include="Indicator.cpp" />
+    <ClCompile Include="ProxyDevice.cpp" />
+    <ClCompile Include="RealDevice.cpp" />
+    <ClCompile Include="Rule.cpp" />
+    <ClCompile Include="RuleLogger.cpp" />
+    <ClCompile Include="Sensor.cpp" />
     <ClCompile Include="Smart_House.cpp" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Thermometer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
